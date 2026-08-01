@@ -22,7 +22,7 @@ export default function Home() {
       <header className="site-header">
         <a className="brand" href="#top" aria-label="로켓에어컨 홈"><span className="brand-mark">R</span><span>로켓에어컨</span></a>
         <nav aria-label="주요 메뉴"><a href="#service">서비스</a><a href="#work">점검방식</a><a href="#guide">출장안내</a><a href="#faq">자주 묻는 질문</a></nav>
-        <a className="header-phone" href="#contact"><small>빠른 출장 상담</small><b>상담 안내</b></a>
+        <a className="header-phone" href="tel:01080225800"><small>빠른 출장 상담</small><b>010-8022-5800</b></a>
       </header>
 
       <section className="hero">
@@ -30,7 +30,7 @@ export default function Home() {
           <p className="hero-kicker"><span>R</span> 에어컨 수리 · 냉매 점검 전문</p>
           <h1>에어컨 문제,<br/><em>오늘 바로 달려갑니다.</em></h1>
           <p>견디기 힘든 더위, 더 이상 참지 마세요.<br/><b>바로 고쳐드리겠습니다.</b></p>
-          <div className="hero-actions"><a href="#contact">출장 상담 안내 <span>→</span></a><a href="#service">서비스 확인</a></div>
+          <div className="hero-actions"><a href="tel:01080225800">지금 전화 상담 <span>→</span></a><a href="#service">서비스 확인</a></div>
           <div className="hero-badges"><span>오늘 바로 출장</span><span>원인부터 점검</span><span>작업 전 비용 안내</span></div>
         </div>
         <div className="hero-visual" aria-hidden="true">
@@ -90,12 +90,12 @@ export default function Home() {
 
       <section className="contact" id="contact">
         <div><p>로켓에어컨 출장 상담</p><h2>지금 증상을 알려주세요.</h2><span>에어컨 종류, 증상, 방문 지역을 말씀해 주시면 상담이 빨라집니다.</span></div>
-        <div className="contact-actions"><a href="#contact"><small>전화 상담</small><b>대표번호 준비 중</b></a><a href="#contact"><small>문자 상담</small><b>상담 채널 준비 중</b></a></div>
-        <p className="contact-note">로켓에어컨 전용 상담 번호와 영업 지역은 확정 후 안내됩니다.</p>
+        <div className="contact-actions"><a href="tel:01080225800"><small>전화 상담</small><b>010-8022-5800</b></a><a href="sms:01080225800"><small>문자 상담</small><b>증상·방문 지역 보내기</b></a></div>
+        <p className="contact-note">증상과 방문 지역을 알려주시면 가장 빠른 방문 시간을 안내해드립니다.</p>
       </section>
 
       <footer><div className="brand footer-brand"><span className="brand-mark">R</span><span>로켓에어컨</span></div><div><p>에어컨 수리 · 냉매 점검 · 누수 · 소음·진동 점검</p><p className="footer-info">로켓에어컨 전용 사업자 정보 준비 중</p><p>© 2026 ROCKET AIRCON. ALL RIGHTS RESERVED.</p></div></footer>
-      <a className="floating-call" href="#contact"><span>☎</span><b>출장 상담 안내</b></a>
+      <a className="floating-call" href="tel:01080225800" aria-label="로켓에어컨 010-8022-5800으로 바로 전화하기"><span>☎</span><b>누르면 바로 전화 연결</b></a>
     </main>
   );
 }
