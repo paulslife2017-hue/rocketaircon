@@ -90,8 +90,8 @@ export default function Home() {
 
       <section className="contact" id="contact">
         <div><p>로켓에어컨 출장 상담</p><h2>지금 증상을 알려주세요.</h2><span>에어컨 종류, 증상, 방문 지역을 말씀해 주시면 상담이 빨라집니다.</span></div>
-        <div className="contact-actions"><a href="tel:01080225800"><small>전화 상담</small><b>010-8022-5800</b></a><a href="sms:01080225800"><small>문자 상담</small><b>증상·방문 지역 보내기</b></a></div>
-        <p className="contact-note">증상과 방문 지역을 알려주시면 가장 빠른 방문 시간을 안내해드립니다.</p>
+        <div className="contact-actions"><a href="tel:01080225800"><small>바로 전화 상담</small><b>010-8022-5800</b></a></div>
+        <p className="contact-note">전화로 증상과 방문 지역을 말씀해 주시면 가장 빠른 방문 시간을 안내해드립니다.</p>
       </section>
 
       <footer><div className="brand footer-brand"><span className="brand-mark">R</span><span>로켓에어컨</span></div><div><p>에어컨 수리 · 냉매 점검 · 누수 · 소음·진동 점검</p><p className="footer-info">로켓에어컨 전용 사업자 정보 준비 중</p><p>© 2026 ROCKET AIRCON. ALL RIGHTS RESERVED.</p></div></footer>
