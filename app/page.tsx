@@ -18,11 +18,13 @@ const faqs = [
 export default function Home() {
   return (
     <main id="top">
-      <div className="top-notice"><b>오늘 접수하면, 오늘 바로 달려갑니다.</b></div>
       <header className="site-header">
-        <a className="brand" href="#top" aria-label="로켓에어컨 홈"><span className="brand-mark">R</span><span>로켓에어컨</span></a>
+        <a className="brand" href="#top" aria-label="로켓에어컨 홈">
+          <span className="brand-mark">R</span>
+          <span className="brand-copy"><b>로켓에어컨</b><small>오늘 접수 · 오늘 방문</small></span>
+        </a>
         <nav aria-label="주요 메뉴"><a href="#service">서비스</a><a href="#work">점검방식</a><a href="#guide">출장안내</a><a href="#faq">자주 묻는 질문</a></nav>
-        <a className="header-phone" href="tel:01080225800"><small>빠른 출장 상담</small><b>010-8022-5800</b></a>
+        <a className="header-phone" href="tel:01080225800"><b>010-8022-5800</b></a>
       </header>
 
       <section className="hero">
@@ -36,7 +38,7 @@ export default function Home() {
         <div className="hero-visual" aria-hidden="true">
           <div className="hero-orbit orbit-a"/><div className="hero-orbit orbit-b"/>
           <img src="/rocket-aircon.png" alt="" />
-          <div className="speed-card"><small>ROCKET SERVICE</small><b>오늘 접수<br/>오늘 바로 방문</b></div>
+          <div className="speed-card"><small>ROCKET SERVICE</small><b>전화 한 통으로<br/>바로 출장 상담</b></div>
           <div className="cloud cloud-a"/><div className="cloud cloud-b"/>
         </div>
       </section>
@@ -91,7 +93,6 @@ export default function Home() {
       <section className="contact" id="contact">
         <div><p>로켓에어컨 출장 상담</p><h2>지금 증상을 알려주세요.</h2><span>에어컨 종류, 증상, 방문 지역을 말씀해 주시면 상담이 빨라집니다.</span></div>
         <div className="contact-actions"><a href="tel:01080225800"><small>바로 전화 상담</small><b>010-8022-5800</b></a></div>
-        <p className="contact-note">전화로 증상과 방문 지역을 말씀해 주시면 가장 빠른 방문 시간을 안내해드립니다.</p>
       </section>
 
       <footer><div className="brand footer-brand"><span className="brand-mark">R</span><span>로켓에어컨</span></div><div><p>에어컨 수리 · 냉매 점검 · 누수 · 소음·진동 점검</p><p className="footer-info">로켓에어컨 전용 사업자 정보 준비 중</p><p>© 2026 ROCKET AIRCON. ALL RIGHTS RESERVED.</p></div></footer>
