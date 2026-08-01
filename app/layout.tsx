@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 const title = "로켓에어컨 | 오늘 방문 에어컨 수리";
-const description = "수도권 LG·삼성 에어컨 수리, 에러코드, 가스·냉매, 누수와 실외기 점검. 오늘 방문 상담, 기본 출장비 3만원.";
+const description = "수도권 에어컨 수리, 에러코드, 가스·냉매, 누수와 실외기 점검. 오늘 방문 상담, 기본 출장비 3만원.";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://rocketaircon.vercel.app"),

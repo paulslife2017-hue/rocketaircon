@@ -1,6 +1,3 @@
-import Link from "next/link";
-import { serviceAreas } from "./data/areas";
-
 const services = [
   { title:"냉방 불량", lead:"바람은 나오는데 시원하지 않을 때", symptoms:["설정 온도까지 내려가지 않음","예전보다 바람이 약해짐"], checks:["필터·열교환기 오염","냉매 압력","실외기 작동 상태"] },
   { title:"에어컨 작동 불가", lead:"전원이 들어오지 않거나 켜지지 않을 때", symptoms:["버튼을 눌러도 반응이 없음","켜졌다가 바로 꺼짐"], checks:["전원·차단기 상태","리모컨·수신부","기판·전기 계통"] },
@@ -18,7 +15,6 @@ const faqs = [
   ["출장 전에 비용을 알 수 있나요?", "증상만으로 확정하기 어려운 작업은 현장 진단 후 안내드립니다. 확인된 원인과 필요한 작업, 비용을 설명한 뒤 진행합니다."],
   ["어떤 에어컨을 점검하나요?", "벽걸이형, 스탠드형, 가정용과 소형 업소용을 중심으로 상담합니다. 제조사와 모델, 설치 환경에 따라 작업 가능 여부가 달라질 수 있습니다."],
   ["상담할 때 무엇을 알려주면 좋나요?", "에어컨 형태, 발생한 증상, 오류 코드, 방문 지역을 알려주세요. 가능하면 에어컨 전체와 문제가 보이는 부분의 사진을 함께 보내주시면 도움이 됩니다."],
-  ["LG·삼성 공식 서비스센터인가요?", "아닙니다. 로켓에어컨은 제조사 공식 서비스센터가 아닌 출장 수리 업체입니다. LG·삼성 제품은 모델과 증상, 부품 수급 여부를 확인한 뒤 작업 가능 여부를 안내드립니다."],
 ];
 
 export default function Home() {
@@ -29,7 +25,7 @@ export default function Home() {
           <span className="brand-mark">R</span>
           <span className="brand-copy"><b>로켓에어컨</b><small>오늘 접수 · 오늘 방문</small></span>
         </a>
-        <nav aria-label="주요 메뉴"><a href="#service">서비스</a><a href="#work">점검방식</a><a href="#guide">출장안내</a><a href="#area">출장지역</a><a href="#faq">자주 묻는 질문</a></nav>
+        <nav aria-label="주요 메뉴"><a href="#service">서비스</a><a href="#work">점검방식</a><a href="#guide">출장안내</a><a href="#faq">자주 묻는 질문</a></nav>
         <a className="header-phone" href="tel:01080225800" aria-label="010-8022-5800 전화 연결"><span aria-hidden="true">☎</span><b>010-8022-5800</b></a>
       </header>
 
@@ -69,15 +65,6 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="brand-service-section" aria-label="제조사별 에어컨 수리 상담">
-        <div className="brand-service-copy"><p>제품별 수리 상담</p><h2>LG·삼성 에어컨도<br/><em>모델부터 확인합니다.</em></h2><span>벽걸이형과 스탠드형을 중심으로 모델명, 오류 코드와 증상을 확인한 뒤 작업 가능 여부를 안내합니다.</span></div>
-        <div className="brand-service-grid">
-          <article><small>LG AIR CONDITIONER</small><h3>LG에어컨 수리 상담</h3><p>안 시원함, 작동 불가, 에러코드, 실외기와 냉매 관련 증상을 확인합니다.</p><div><span>LG에어컨수리</span><span>LG에어컨고장</span><span>LG에어컨에러코드</span></div></article>
-          <article><small>SAMSUNG AIR CONDITIONER</small><h3>삼성에어컨 수리 상담</h3><p>냉방 불량, 오류 표시, 누수, 소음과 실외기 작동 상태를 차례로 점검합니다.</p><div><span>삼성에어컨수리</span><span>삼성에어컨고장</span><span>삼성에어컨에러코드</span></div></article>
-        </div>
-        <p className="brand-disclaimer">로켓에어컨은 LG전자·삼성전자 공식 서비스센터가 아닙니다. 기종과 부품 수급 여부에 따라 작업이 제한될 수 있습니다.</p>
-      </section>
-
       <section className="work-section" id="work">
         <div className="section-heading light"><p>실제 작업 현장</p><h2>보이는 곳만 보지 않고<br/><em>원인을 먼저 확인합니다.</em></h2><span>직접 방문한 현장에서 촬영한 실제 작업 사진입니다.</span></div>
         <div className="work-grid">
@@ -99,13 +86,6 @@ export default function Home() {
           <li><b>04</b><div><h3>비용 확인 후 작업</h3><p>안내드린 작업과 비용을 확인한 뒤 진행합니다.</p></div></li>
           <li><b>05</b><div><h3>작동·현장 확인</h3><p>냉방 상태를 확인하고 작업 주변을 정리합니다.</p></div></li>
         </ol>
-      </section>
-
-      <section className="home-area-section" id="area">
-        <div className="home-area-intro"><p>출장 가능 지역</p><h2>인천·경기 서부부터<br/><em>서울 서남권까지</em></h2><span>인천은 강화군과 영종도를 제외합니다. 지역과 접수 시간을 확인해 오늘 방문 가능한 가장 빠른 시간을 안내합니다.</span><Link href="/service-area">지역별 서비스 자세히 보기 <b>→</b></Link></div>
-        <div className="home-area-list">
-          {serviceAreas.map((area) => <Link href={`/service-area#${area.slug}`} key={area.slug}><b>{area.label}</b><span>{area.keywords[0]}</span></Link>)}
-        </div>
       </section>
 
       <section className="faq-section" id="faq">
