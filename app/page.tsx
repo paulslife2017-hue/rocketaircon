@@ -10,7 +10,7 @@ const services = [
 
 const faqs = [
   ["오늘 바로 방문 가능한가요?", "오늘 방문을 우선으로 움직입니다. 지역, 접수 시간, 앞선 현장 작업을 확인한 뒤 가장 빠른 방문 시간을 안내드립니다."],
-  ["출장비는 얼마인가요?", "기본 출장비는 30,000원입니다. 수리·부품·냉매 작업 비용은 별도입니다. 현장 점검 후 별도의 검사·진단이 필요한 경우 비용이 발생할 수 있으며, 진행 전에 안내드립니다."],
+  ["출장비는 얼마인가요?", "기본 출장비는 30,000원입니다. 수리·부품·냉매 작업 비용은 별도입니다. 현장 상태에 따라 점검·진단 비용이 발생할 수 있으며, 수리가 필요한 경우 작업 전 비용을 안내드립니다."],
   ["냉매는 무조건 충전하면 되나요?", "아닙니다. 냉방이 약한 원인은 필터 오염, 실외기 문제, 냉매 부족 등 다양합니다. 상태를 먼저 확인하고 냉매 작업이 필요한 경우에만 안내합니다."],
   ["출장 전에 비용을 알 수 있나요?", "증상만으로 확정하기 어려운 작업은 현장 진단 후 안내드립니다. 확인된 원인과 필요한 작업, 비용을 설명한 뒤 진행합니다."],
   ["어떤 에어컨을 점검하나요?", "벽걸이형, 스탠드형, 가정용과 소형 업소용을 중심으로 상담합니다. 제조사와 모델, 설치 환경에 따라 작업 가능 여부가 달라질 수 있습니다."],
@@ -35,7 +35,7 @@ export default function Home() {
           <h1>에어컨 문제<br/><em>오늘 바로<br className="mobile-break"/>달려갑니다.</em></h1>
           <p>견디기 힘든 더위, 더 이상 참지 마세요.<br/><b>바로 고쳐드리겠습니다.</b></p>
           <div className="hero-actions"><a href="tel:01080225800">지금 전화 상담 <span>→</span></a><a href="#service">서비스 확인</a></div>
-          <div className="hero-fee"><span>출장비 안내</span><b>기본 30,000원</b><small>별도 검사·진단 필요 시 비용 사전 안내</small></div>
+          <div className="hero-fee"><span>출장비 안내</span><b>기본 30,000원</b><small>점검·진단 비용 발생 시 사전 안내</small></div>
           <div className="hero-badges"><span>오늘 바로 출장</span><span>원인부터 점검</span><span>작업 전 비용 안내</span></div>
         </div>
         <div className="hero-visual" aria-hidden="true">
@@ -49,7 +49,7 @@ export default function Home() {
       <section className="trust-row" aria-label="서비스 원칙">
         <div><span>01</span><b>오늘 바로 출장</b><p>접수 즉시 확인해 가장 빠른 방문 시간을 안내합니다.</p></div>
         <div><span>02</span><b>원인부터 점검</b><p>증상만 보고 부품 교체부터 권하지 않습니다.</p></div>
-        <div><span>03</span><b>출장비 3만원</b><p>별도 검사·진단이 필요한 경우, 진행 전에 비용을 안내드립니다.</p></div>
+        <div><span>03</span><b>출장비 3만원</b><p>현장 상태에 따라 점검·진단 비용이 발생할 수 있으며, 수리가 필요한 경우 작업 전 비용을 안내드립니다.</p></div>
         <div><span>04</span><b>작동 확인</b><p>작업 후 냉방과 이상 여부를 다시 확인합니다.</p></div>
       </section>
 
@@ -98,7 +98,7 @@ export default function Home() {
         <div className="contact-actions"><a href="tel:01080225800"><small>바로 전화 상담</small><b>010-8022-5800</b></a></div>
       </section>
 
-      <footer><div className="brand footer-brand"><span className="brand-mark">R</span><span>로켓에어컨</span></div><div><p>에어컨 수리 · 냉매 점검 · 누수 · 소음·진동 점검</p><p>기본 출장비 30,000원 · 별도 검사·진단 필요 시 비용 사전 안내</p><p className="footer-info">로켓에어컨 전용 사업자 정보 준비 중</p><p>© 2026 ROCKET AIRCON. ALL RIGHTS RESERVED.</p></div></footer>
+      <footer><div className="brand footer-brand"><span className="brand-mark">R</span><span>로켓에어컨</span></div><div><p>에어컨 수리 · 냉매 점검 · 누수 · 소음·진동 점검</p><p>기본 출장비 30,000원 · 점검·진단 비용 발생 시 사전 안내</p><p className="footer-info">로켓에어컨 전용 사업자 정보 준비 중</p><p>© 2026 ROCKET AIRCON. ALL RIGHTS RESERVED.</p></div></footer>
       <a className="floating-call" href="tel:01080225800" aria-label="로켓에어컨 010-8022-5800으로 바로 전화하기"><span>☎</span><b>누르면 바로 전화 연결</b></a>
     </main>
   );

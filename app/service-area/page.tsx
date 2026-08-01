@@ -41,7 +41,7 @@ export default function ServiceAreaPage() {
           <span>지역과 접수 시간을 확인해 오늘 방문 가능한 가장 빠른 시간을 안내합니다.</span>
           <div className="area-hero-actions"><a href="tel:01080225800">지금 전화 상담</a><Link href="#areas">지역 확인</Link></div>
         </div>
-        <aside aria-label="출장비 안내"><small>기본 출장비</small><b>30,000원</b><p>수리·부품·냉매 비용은 별도이며, 검사·진단이 필요한 경우 진행 전에 안내합니다.</p></aside>
+        <aside aria-label="출장비 안내"><small>기본 출장비</small><b>30,000원</b><p>현장 상태에 따라 점검·진단 비용이 발생할 수 있으며, 수리가 필요한 경우 작업 전 비용을 안내드립니다.</p></aside>
       </section>
 
       <section className="area-priority" aria-label="주요 출장 서비스">
@@ -62,7 +62,7 @@ export default function ServiceAreaPage() {
 
       <section className="area-seo-copy">
         <div><p>검색어보다 먼저 보는 것</p><h2>같은 냉방 불량도<br/>원인은 다를 수 있습니다.</h2></div>
-        <div><p>에어컨 수리, 가스충전, 냉매충전, 에어컨 AS를 찾고 계시더라도 현장 상태에 따라 필요한 작업은 달라집니다. 로켓에어컨은 냉매 압력, 실외기 작동, 배수와 전기 계통을 확인한 뒤 필요한 작업과 비용을 설명합니다.</p><p>LG·삼성 에어컨의 영문·숫자 에러코드는 사진으로 남겨 상담할 때 알려주세요. 로켓에어컨은 제조사 공식 서비스센터가 아니며 모델과 부품 수급 여부에 따라 작업 가능 여부가 달라질 수 있습니다.</p><p>기본 출장비는 30,000원이며 수리·부품·냉매 작업 비용은 별도입니다. 현장 점검 후 별도의 검사·진단이 필요한 경우 비용이 발생할 수 있으며, 진행 전에 안내드립니다.</p></div>
+        <div><p>에어컨 수리, 가스충전, 냉매충전, 에어컨 AS를 찾고 계시더라도 현장 상태에 따라 필요한 작업은 달라집니다. 로켓에어컨은 냉매 압력, 실외기 작동, 배수와 전기 계통을 확인한 뒤 필요한 작업과 비용을 설명합니다.</p><p>LG·삼성 에어컨의 영문·숫자 에러코드는 사진으로 남겨 상담할 때 알려주세요. 로켓에어컨은 제조사 공식 서비스센터가 아니며 모델과 부품 수급 여부에 따라 작업 가능 여부가 달라질 수 있습니다.</p><p>기본 출장비는 30,000원이며 수리·부품·냉매 작업 비용은 별도입니다. 현장 상태에 따라 점검·진단 비용이 발생할 수 있으며, 수리가 필요한 경우 작업 전 비용을 안내드립니다.</p></div>
       </section>
 
       <section className="contact area-contact">
@@ -70,7 +70,7 @@ export default function ServiceAreaPage() {
         <div className="contact-actions"><a href="tel:01080225800"><small>바로 전화 상담</small><b>010-8022-5800</b></a></div>
       </section>
 
-      <footer><div className="brand footer-brand"><span className="brand-mark">R</span><span>로켓에어컨</span></div><div><p>에어컨 수리 · 가스·냉매 점검 · 누수 · 실외기 점검</p><p>기본 출장비 30,000원 · 별도 검사·진단 필요 시 비용 사전 안내</p><p>© 2026 ROCKET AIRCON. ALL RIGHTS RESERVED.</p></div></footer>
+      <footer><div className="brand footer-brand"><span className="brand-mark">R</span><span>로켓에어컨</span></div><div><p>에어컨 수리 · 가스·냉매 점검 · 누수 · 실외기 점검</p><p>기본 출장비 30,000원 · 점검·진단 비용 발생 시 사전 안내</p><p>© 2026 ROCKET AIRCON. ALL RIGHTS RESERVED.</p></div></footer>
       <a className="floating-call" href="tel:01080225800" aria-label="로켓에어컨 010-8022-5800으로 바로 전화하기"><span>☎</span><b>누르면 바로 전화 연결</b></a>
     </main>
   );
