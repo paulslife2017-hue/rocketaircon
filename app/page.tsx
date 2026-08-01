@@ -24,7 +24,7 @@ export default function Home() {
           <span className="brand-copy"><b>로켓에어컨</b><small>오늘 접수 · 오늘 방문</small></span>
         </a>
         <nav aria-label="주요 메뉴"><a href="#service">서비스</a><a href="#work">점검방식</a><a href="#guide">출장안내</a><a href="#faq">자주 묻는 질문</a></nav>
-        <a className="header-phone" href="tel:01080225800"><b>010-8022-5800</b></a>
+        <a className="header-phone" href="tel:01080225800" aria-label="010-8022-5800 전화 연결"><span aria-hidden="true">☎</span><b>010-8022-5800</b></a>
       </header>
 
       <section className="hero">
