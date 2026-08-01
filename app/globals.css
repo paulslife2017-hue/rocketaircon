@@ -46,7 +46,7 @@ body{background:var(--surface)}
 .contact>div:first-child>p{color:#8fd3ff}.contact>div:first-child>span{color:#edf7ff;font-size:15px}.placeholder{color:#c0d5e7}
 .contact-actions a:first-child{color:white;background:var(--orange)}
 .contact-actions a:first-child small{color:#fff0eb}.contact-actions a{width:320px;text-align:center;box-shadow:0 14px 32px rgba(0,12,28,.22)}.contact-actions b{font-size:22px;letter-spacing:.01em}
-.contact-actions a:last-child{background:#f8fafc}
+.contact-actions a+a{color:var(--navy);background:#f8fafc}
 footer{background:#061a31}
 
 @media(max-width:600px){.service-grid{grid-template-columns:1fr}.trust-row{padding-left:18px;padding-right:18px}.work-grid img{filter:saturate(.62) contrast(1.08) brightness(.9)}}
@@ -114,4 +114,40 @@ h1,h2,h3,b,.brand{font-weight:800}.hero h1,.section-heading h2,.guide-intro h2,.
   .place-link{width:100%;justify-content:space-between;margin-top:16px}
   .service-lead,.guide-steps p,.faq-list details>p{font-size:14px}
   .floating-call{font-size:13px}
+  .contact{padding:64px 20px 102px}
+  .contact>div:first-child>p{margin-bottom:10px;font-size:11px}
+  .contact h2{margin-bottom:13px;font-size:36px;line-height:1.14;letter-spacing:-2.2px}
+  .contact>div:first-child>span{display:block;max-width:310px;margin:0 auto;font-size:14px;line-height:1.65}
+  .contact-actions{margin:28px 0 0}
+  .contact-actions a{display:flex;min-height:78px;flex-direction:column;justify-content:center;align-items:center;padding:16px 20px;border-radius:10px}
+  .contact-actions small{font-size:12px}
+  .contact-actions b{margin-top:5px;font-size:21px}
+}
+
+/* Service cards sit on a cool field so the section reads as one clear block. */
+.mobile-break{display:none}
+.services{background:linear-gradient(180deg,#dce8f1 0%,#e9f0f5 100%)}
+.services .section-heading>span{color:#526b80}
+.service-card{background:linear-gradient(145deg,#f5f9fc 0%,#eaf2f7 100%);border:1px solid #c7d8e4;border-top:3px solid var(--blue);box-shadow:0 14px 32px rgba(17,54,88,.08)}
+.service-card:hover{box-shadow:0 18px 42px rgba(17,54,88,.14)}
+.service-card-head>b{color:#0f67ad;background:#dcecf7}
+.service-detail{background:#dfe9f1;border:1px solid #d0dee8}
+.check-list span{background:rgba(255,255,255,.55);border-color:#c8d8e3;color:#536b7e}
+
+@media(max-width:600px){
+  .services{padding-top:66px;padding-bottom:66px}
+  .services .section-heading{margin-bottom:32px}
+  .services .section-heading>span{font-size:14px;line-height:1.65}
+  .service-grid{gap:14px}
+  .service-card{padding:22px 20px;border-radius:12px}
+  .service-card h3{margin-top:20px;font-size:22px}
+  .service-detail{padding:16px}
+  .mobile-break{display:block}
+}
+
+@media(max-width:360px){
+  .hero h1{font-size:35px;letter-spacing:-2.5px}
+  .contact h2{font-size:32px;letter-spacing:-1.8px}
+  .brand-copy b{font-size:17px}
+  .header-phone b{font-size:10px}
 }

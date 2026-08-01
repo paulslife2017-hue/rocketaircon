@@ -30,7 +30,7 @@ export default function Home() {
       <section className="hero">
         <div className="hero-copy">
           <p className="hero-kicker"><span>R</span> 에어컨 수리 · 냉매 점검 전문</p>
-          <h1>에어컨 문제,<br/><em>오늘 바로 달려갑니다.</em></h1>
+          <h1>에어컨 문제<br/><em>오늘 바로<br className="mobile-break"/>달려갑니다.</em></h1>
           <p>견디기 힘든 더위, 더 이상 참지 마세요.<br/><b>바로 고쳐드리겠습니다.</b></p>
           <div className="hero-actions"><a href="tel:01080225800">지금 전화 상담 <span>→</span></a><a href="#service">서비스 확인</a></div>
           <div className="hero-badges"><span>오늘 바로 출장</span><span>원인부터 점검</span><span>작업 전 비용 안내</span></div>
