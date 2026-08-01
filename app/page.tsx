@@ -49,7 +49,7 @@ export default function Home() {
       <section className="trust-row" aria-label="서비스 원칙">
         <div><span>01</span><b>오늘 바로 출장</b><p>접수 즉시 확인해 가장 빠른 방문 시간을 안내합니다.</p></div>
         <div><span>02</span><b>원인부터 점검</b><p>증상만 보고 부품 교체부터 권하지 않습니다.</p></div>
-        <div><span>03</span><b>출장비 3만원</b><p>기본 출장비이며 수리·부품 비용은 별도 안내합니다.</p></div>
+        <div><span>03</span><b>출장비 3만원</b><p>수리나 부품 교체가 필요한 경우, 비용을 먼저 안내드립니다.</p></div>
         <div><span>04</span><b>작동 확인</b><p>작업 후 냉방과 이상 여부를 다시 확인합니다.</p></div>
       </section>
 
