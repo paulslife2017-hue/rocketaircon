@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://rocketaircon.vercel.app"),
   title: { default: title, template: "%s | 로켓에어컨" },
   description,
+  verification: {
+    google: "Cp7SFz3tzpsMia6iRSQ5wZm59vKxIjiwg8yp0fLvObc",
+  },
   alternates: { canonical: "/" },
   robots: { index: true, follow: true },
   openGraph: {
