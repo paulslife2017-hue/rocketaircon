@@ -10,6 +10,9 @@ export const metadata: Metadata = {
   description,
   verification: {
     google: "Cp7SFz3tzpsMia6iRSQ5wZm59vKxIjiwg8yp0fLvObc",
+    other: {
+      "naver-site-verification": "8d121c01d13b80e5b3de1b8129d53209152092f4",
+    },
   },
   alternates: { canonical: "/" },
   robots: { index: true, follow: true },
