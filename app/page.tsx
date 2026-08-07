@@ -15,6 +15,7 @@ const faqs = [
   ["출장 전에 비용을 알 수 있나요?", "증상만으로 확정하기 어려운 작업은 현장 진단 후 안내드립니다. 확인된 원인과 필요한 작업, 비용을 설명한 뒤 진행합니다."],
   ["어떤 에어컨을 점검하나요?", "벽걸이형, 스탠드형, 가정용과 소형 업소용을 중심으로 상담합니다. 제조사와 모델, 설치 환경에 따라 작업 가능 여부가 달라질 수 있습니다."],
   ["상담할 때 무엇을 알려주면 좋나요?", "에어컨 형태, 발생한 증상, 오류 코드, 방문 지역을 알려주세요. 가능하면 에어컨 전체와 문제가 보이는 부분의 사진을 함께 보내주시면 도움이 됩니다."],
+  ["누가 방문하나요?", "당일 방문·수리를 우선으로 운영합니다. 접수가 마감되거나 일정이 겹치는 경우 협력업체가 도급 방식으로 방문할 수 있으며, 방문 전에 안내드립니다."],
 ];
 
 export default function Home() {
@@ -98,7 +99,7 @@ export default function Home() {
         <div className="contact-actions"><a href="tel:01080225800"><small>바로 전화 상담</small><b>010-8022-5800</b></a></div>
       </section>
 
-      <footer><div className="brand footer-brand"><span className="brand-mark">R</span><span>로켓에어컨</span></div><div><p>에어컨 수리 · 냉매 점검 · 누수 · 소음·진동 점검</p><p>기본 출장비 30,000원 · 점검·진단 비용 발생 시 사전 안내</p><p className="footer-info">로켓에어컨 전용 사업자 정보 준비 중</p><p>© 2026 ROCKET AIRCON. ALL RIGHTS RESERVED.</p></div></footer>
+      <footer><div className="brand footer-brand"><span className="brand-mark">R</span><span>로켓에어컨</span></div><div><p>에어컨 수리 · 냉매 점검 · 누수 · 소음·진동 점검</p><p>기본 출장비 30,000원 · 점검·진단 및 수리 비용은 작업 전 안내</p><p className="footer-info">접수 마감 또는 일정 중복 시 사전 안내 후 협력업체가 도급 방식으로 방문할 수 있습니다.</p><p>© 2026 ROCKET AIRCON. ALL RIGHTS RESERVED.</p></div></footer>
       <a className="floating-call" href="tel:01080225800" aria-label="로켓에어컨 010-8022-5800으로 바로 전화하기"><span>☎</span><b>누르면 바로 전화 연결</b></a>
     </main>
   );

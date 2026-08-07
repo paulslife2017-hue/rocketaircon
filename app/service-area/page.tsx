@@ -56,6 +56,7 @@ export default function ServiceAreaPage() {
             <p>{area.note}</p>
             <h3>{area.label} 에어컨 출장 주요 항목</h3>
             <ul>{area.keywords.map((keyword) => <li key={keyword}>{keyword}</li>)}</ul>
+            <Link className="area-detail-link" href={`/area/${area.slug}`}>{area.label} 지역 안내 보기 <span>→</span></Link>
           </article>)}
         </div>
       </section>
