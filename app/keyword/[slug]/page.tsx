@@ -38,7 +38,18 @@ const intentContent: Record<string, IntentContent> = {
   inspection: { label:"에어컨 점검", headline:"이상 징후와 운전 상태를 확인합니다.", lead:"냉방 성능·전원·실외기 상태 확인", description:"특정 부품을 미리 정하지 않고 현재 증상과 제품 운전 상태를 확인합니다. 점검 후 별도 진단이나 수리가 필요한 경우 작업 전 비용을 안내합니다.", signs:["예전보다 냉방 시간이 길어짐","간헐적으로 멈추거나 오류가 생김","실외기 소리와 열이 평소와 다름"], checks:["온도·송풍 상태","전원·센서·제어부","냉매 압력·실외기 운전"], caution:"기본 출장비는 30,000원이며 추가 점검·수리 비용은 작업 전 안내합니다." },
 };
 
-function getEntry(slug: string) { return seoKeywords.find((entry) => entry.slug === slug); }
+function decodeSlug(slug: string) {
+  try {
+    return decodeURIComponent(slug);
+  } catch {
+    return slug;
+  }
+}
+
+function getEntry(slug: string) {
+  const decodedSlug = decodeSlug(slug);
+  return seoKeywords.find((entry) => entry.slug === decodedSlug);
+}
 function getArea(slug: string) { return serviceAreas.find((area) => area.slug === slug); }
 
 export function generateStaticParams() { return seoKeywords.map((entry) => ({ slug: entry.slug })); }
