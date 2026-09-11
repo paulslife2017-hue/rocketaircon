@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 const services = [
   { title:"냉방 불량", lead:"바람은 나오는데 시원하지 않을 때", symptoms:["설정 온도까지 내려가지 않음","예전보다 바람이 약해짐"], checks:["필터·열교환기 오염","냉매 압력","실외기 작동 상태"] },
   { title:"에어컨 작동 불가", lead:"전원이 들어오지 않거나 켜지지 않을 때", symptoms:["버튼을 눌러도 반응이 없음","켜졌다가 바로 꺼짐"], checks:["전원·차단기 상태","리모컨·수신부","기판·전기 계통"] },
@@ -101,15 +99,7 @@ export default function Home() {
         <div className="contact-actions"><a href="tel:01080225800"><small>바로 전화 상담</small><b>010-8022-5800</b></a></div>
       </section>
 
-      <footer><div className="brand footer-brand"><span className="brand-mark">R</span><span>로켓에어컨</span></div><div><p>에어컨 수리 · 냉매 점검 · 누수 · 소음·진동 점검</p><p>기본 출장비 30,000원 · 점검·진단 및 수리 비용은 작업 전 안내</p><p className="footer-info">접수 마감 또는 일정 중복 시 사전 안내 후 협력업체가 도급 방식으로 방문할 수 있습니다.</p><p>© 2026 ROCKET AIRCON. ALL RIGHTS RESERVED.</p></div></footer>
-      <section className="business-registration" aria-labelledby="business-registration-title">
-        <h2 id="business-registration-title">사업자등록증</h2>
-        <p>로켓에어컨 사업자등록 정보</p>
-        <a href="/business-registration.png" target="_blank" rel="noopener noreferrer" aria-label="로켓에어컨 사업자등록증 원본 크게 보기 (새 창)">
-          <Image src="/business-registration.png" alt="로켓에어컨 사업자등록증, 사업자등록번호 254-22-01893" width={585} height={727} sizes="(max-width: 600px) calc(100vw - 40px), 420px" />
-          <span>사업자등록증 크게 보기 ↗</span>
-        </a>
-      </section>
+      <footer><div className="brand footer-brand"><span className="brand-mark">R</span><span>로켓에어컨</span></div><div><p>에어컨 수리 · 냉매 점검 · 누수 · 소음·진동 점검</p><p>기본 출장비 30,000원 · 점검·진단 및 수리 비용은 작업 전 안내</p><p className="footer-info">접수 마감 또는 일정 중복 시 사전 안내 후 협력업체가 도급 방식으로 방문할 수 있습니다.</p><div className="business-info" aria-label="사업자 정보"><p>상호: 로켓에어컨 · 대표자: 김명진 · 사업자등록번호: 254-22-01893</p><p>사업장 주소: 서울특별시 금천구 시흥대로 97, 26동 202호(시흥동, 시흥유통상가)</p></div><p>© 2026 ROCKET AIRCON. ALL RIGHTS RESERVED.</p></div></footer>
       <a className="floating-call" href="tel:01080225800" aria-label="로켓에어컨 010-8022-5800으로 바로 전화하기"><span>☎</span><b>누르면 바로 전화 연결</b></a>
     </main>
   );
